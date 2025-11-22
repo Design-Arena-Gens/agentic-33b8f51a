@@ -1,0 +1,29 @@
+export const metadata = {
+  title: "?????? ????????? Do...Until",
+  description: "???? ???? Do...Until ?? ????? ???????",
+};
+
+import "./globals.css";
+import React from "react";
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="ar" dir="rtl">
+      <body>
+        <div className="container">
+          <header className="header">
+            <h1>?????? ????????? Do...Until ? ????... ???</h1>
+          </header>
+          <main>{children}</main>
+          <footer className="footer">
+            <span>? {new Date().getFullYear()} ????? ???????</span>
+          </footer>
+        </div>
+      </body>
+    </html>
+  );
+}
